@@ -45,11 +45,11 @@ metadata:
   name: app-1
   annotations:
     alb.ingress.kubernetes.io/scheme: internet-facing
-    # alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS": 443}]'
-    # alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:160885265516:certificate/94cd8d1f-d89e-4253-b737-30d2f604c296
-    # alb.ingress.kubernetes.io/target-type: ip
-    # alb.ingress.kubernetes.io/tags: Environment=dev,Team=test
-    # alb.ingress.kubernetes.io/group.name: roboshop
+    alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS": 443}]'
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:786020472029:certificate/4519a8f5-9ff6-4270-9367-a2ad8a73a714
+    alb.ingress.kubernetes.io/target-type: ip
+    alb.ingress.kubernetes.io/tags: Environment=dev,Team=test
+    alb.ingress.kubernetes.io/group.name: roboshop
 spec:
   ingressClassName: alb
   rules:
