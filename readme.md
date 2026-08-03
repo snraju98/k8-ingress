@@ -28,5 +28,6 @@ eksctl create iamserviceaccount \
 Install AWS LoadBalancer Controller Drivers
 
 helm repo add eks https://aws.github.io/eks-charts
+helm repo update
 
 helm install aws-load-balancer-controller eks/aws-load-balancer-controller -n kube-system --set clusterName=roboshop --set serviceAccount.create=false --set serviceAccount.name=aws-load-balancer-controller
